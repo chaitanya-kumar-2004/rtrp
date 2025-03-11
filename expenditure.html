@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Expenditure Tracker</title>
+    <link rel="stylesheet" href="expenditure.css">
+    <script src="expenditure.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Business Expenditure Tracker</h1>
+        </div>
+        <form id="expenseForm">
+            <div class="form-group">
+                <label for="expenseType">Expense Type:</label>
+                <select id="expenseType" required>
+                    <option value="shares">Shares</option>
+                    <option value="labor">Labor</option>
+                    <option value="capital">Capital</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expenseDescription">Description:</label>
+                <input type="text" id="expenseDescription" required>
+            </div>
+            <div class="form-group">
+                <label for="expenseAmount">Amount (₹):</label>
+                <input type="number" id="expenseAmount" required min="0" step="0.01">
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div id="expenseSummary">
+            <h2>Expense Summary</h2>
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Amount (₹)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="totalExpense">
+                <h3>Total Expenditure: <span id="totalAmount">₹0.00</span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+.container{
+    background-image: url("pexels-daniel-dan-47825192-7708811.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    z-index: 2;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    padding-right: 60px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color:black;
+    position: relative;
+}
+.menu{
+    margin-right: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.menu a{
+    width: 100%;
+    height: 100%;
+   
+}
+.menu button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+}
+header ul li a::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #5dcfca;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+.menu button:hover{
+    background-color: #5dcfca;
+}
+.menu:hover{
+    transform: translateY(-5px);
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+section{
+    margin-top: 100px;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 2;
+    margin-right: 100px;
+}
+section h1{
+    color: #fff;
+    font-size: 75px;
+}
+h1 span{
+    color: #fff;
+}
+section p{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 25px;
+}
+section .refer{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.refer a img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.refer a img:hover{
+    transform: translateY(-8px);
+}
+/* -----------------services--------------------- */
+#services{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+section .heading{
+    width: 100%;
+    background-color: #fff;
+}
+.heading h1{
+    margin-left: 45%;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box .box-1{
+    width: 100%;
+    background-color: #262626;
+    padding: 30px 35px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.box-1:hover{
+    background-color: #5dcfca;
+    transform: translateY(-10px);
+}
+.box-1 .icon{
+    font-size: 75px;
+}
+.icon a{
+    color: #fff;
+}
+.icon a:hover{
+    color: black;
+}
+.box-1 h1{
+    margin-top: 10px;
+}
+.box-1 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.span-2 p{
+    margin-top: 40px;
+}
+/* -----------------------------------------document------------------------------------- */
+
+#document{
+    margin: 0px 80px;
+    margin-bottom: 80px;
+}
+.details{
+    font-size: 20px;
+}
+.details h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5dcfca;
+}
+/* --------------------------contact-------------------------- */
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px
+}
+.con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.con h1{
+    color: #5dcfca;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.con p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.con a{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.con a button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    transition: .5s;
+}
+.con a button:hover{
+    background-color: #5dcfca;
+    color: #fff;
+    transform: translateY(-10px);
+}
+.social-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social-icon i{
+    margin-right: 20px;
+    font-size: 40px;
+    transition: .5s;
+}
+.social-icon i:hover{
+    color: #5dcfca;
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 600px){
+    #service{
+        
+    }
+}
